@@ -2,32 +2,28 @@ aq2_site
 ========
 
 Action Q2 server browsing site
-
-install:
+********
+**Install:**
 
 Create this structure in app/ dir with read and write permissions
 
-tmp
-|-- cache
-|   |-- models
-|   |   `-- empty
-|   |-- persistent
-|   |   |-- empty
-|   `-- views
-|       `-- empty
-|-- logs
-|   `-- empty
-|-- sessions
-|   `-- empty
-`-- tests
-    `-- empty
+* tmp
+* |-- cache
+* |   |-- models
+* |   |-- persistent
+* |   |-- views
+* |-- logs
+* |-- sessions
+* |-- tests
 
-the copy and rename
+then copy and rename
 
-app/core.php.default -> app/core.php
-app/database.php.default -> app/database.php
+> app/core.php.default -> app/core.php
 
+> app/database.php.default -> app/database.php
 
-to add a server:
+********************
 
-app/Controllers/PagesController.php -> line 67
+**To add a server:**
+
+> app/Controllers/PagesController.php -> line 67
