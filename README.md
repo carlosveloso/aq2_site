@@ -36,9 +36,9 @@ then copy and rename
 server {
  listen 80 ;
 
- server_name aq2chile.cl www.aq2chile.cl;
+ server_name example.com;
 
- root /www/aq2_site/app/webroot;
+ root /public_html/aq2_site/app/webroot; # Change this but be sure to keep it routed to your cake webroot
  index index.html index.php;
 
  location / {
@@ -61,12 +61,4 @@ server {
  }
 
 }
-12:20
-root /www/aq2_site/app/webroot;
- index index.html index.php;
-
- location / {
-   try_files $uri $uri/ /index.php?$uri&$args;
-   set $new_uri $uri;
- }
  ````
