@@ -27,3 +27,46 @@ then copy and rename
 **To add a server:**
 
 > app/Controllers/PagesController.php -> line 67
+
+********************
+
+If you run Nginx, use this config on your enabled-site
+
+`
+server {
+ listen 80 ;
+
+ server_name aq2chile.cl www.aq2chile.cl;
+
+ root /www/aq2_site/app/webroot;
+ index index.html index.php;
+
+ location / {
+   try_files $uri $uri/ /index.php?$uri&$args;
+   set $new_uri $uri;
+ }
+
+ location ~ \.php$ {
+   fastcgi_split_path_info ^(.+\.php)(/.+)$;
+   # NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
+
+   fastcgi_pass 127.0.0.1:9000;
+   fastcgi_index index.php;
+   include fastcgi_params;
+   fastcgi_param PATH_INFO $new_uri;
+ }
+
+ location ~ /(\.ht|\.git|\.svn) {
+   deny  all;
+ }
+
+}
+12:20
+root /www/aq2_site/app/webroot;
+ index index.html index.php;
+
+ location / {
+   try_files $uri $uri/ /index.php?$uri&$args;
+   set $new_uri $uri;
+ }
+ `
