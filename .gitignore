@@ -6,3 +6,5 @@
 /dist
 .DS_Store
 /tags
+app/Config/core.php
+app/Config/database.php

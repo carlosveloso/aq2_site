@@ -64,8 +64,8 @@ class PagesController extends AppController {
 		App::uses('GameQ', 'Lib/gameq');
 		$gq = new GameQ();
 		$servers = array(
-		    'Privado 1' => array('quake2', '190.98.228.106', 20000),
-		    'Elara' => array('quake2', '190.98.228.106', 21000),
+		    'Privado 1' => array('quake2', '190.114.254.173', 27100),
+		    'Elara' 		=> array('quake2', '190.114.254.173', 27000),
 		    //'Quake3' => array('quake3', '190.98.228.106', 27960)
 		);
 
