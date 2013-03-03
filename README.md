@@ -30,9 +30,9 @@ then copy and rename
 
 ********************
 
-If you run Nginx, use this config on your enabled-site
+**If you run Nginx, use this config on your enabled-site**
 
-`
+````
 server {
  listen 80 ;
 
@@ -69,4 +69,4 @@ root /www/aq2_site/app/webroot;
    try_files $uri $uri/ /index.php?$uri&$args;
    set $new_uri $uri;
  }
- `
+ ````
