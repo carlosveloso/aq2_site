@@ -3,7 +3,7 @@ aq2_site
 
 Action Q2 server browsing site
 ********
-**Install:**
+**install:**
 
 Create this structure in app/ dir with read and write permissions
 
