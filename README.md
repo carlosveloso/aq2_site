@@ -5,7 +5,7 @@ Action Q2 server browsing site
 ********
 **Install:**
 
-create this structure in app/ dir with read and write permissions
+Create this structure in app/ dir with read and write permissions
 
 * tmp
 * |-- cache
