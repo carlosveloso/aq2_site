@@ -1,7 +1,7 @@
 aq2_site
 ========
 
-action Q2 server browsing site
+Action Q2 server browsing site
 ********
 **Install:**
 
