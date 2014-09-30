@@ -16,7 +16,7 @@ Create this structure in app/ dir with read and write permissions
 * |-- sessions
 * |-- tests
 
-then copy and rename
+Then copy and rename
 
 > app/core.php.default -> app/core.php
 
